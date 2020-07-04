@@ -1,0 +1,35 @@
+ @mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @mixin bordered($color: black, $type: solid) {
+    border-top: 1px $type $color;
+    border-bottom: 1px $type $color;
+  }
+  
+  @mixin generateIcons($iconList) {
+    @each $iconName in $iconList {
+      .icon-#{$iconName} {
+        background-image: url("../images/#{$iconName}.svg");
+      }
+    }
+  }
+
+
+  @mixin textFont($size: 14px, $style: normal, $weight: normal, $height: 1.14, $spacing: 0.02em) {
+  font-family: Roboto;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-decoration: none;
+}
+
+    @mixin transition ($type: transform) {
+    transition-property: $type;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

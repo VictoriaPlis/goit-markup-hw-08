@@ -1,0 +1,156 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+footer {
+    background-color: #2F303A;
+}
+
+.footer {
+    background-color: #2F303A;
+
+    &-title{
+    
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        @include  textFont($weight: bold, $height: 1.15, $spacing: 0.04em); 
+        text-transform: uppercase;
+        color: $whiteColor;
+        
+    }
+
+    &-nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-top: 48px;
+        padding-bottom: 28px;
+        @extend %section1200
+        
+    }
+    
+    &-adress {
+        @include  textFont($height: 2, $spacing: 0.03em); 
+        color: rgba(255, 255, 255, 0.6);
+        margin-right: 69px;
+            
+        
+    }
+    &-socials__list {
+        @include centeredFlex;
+        align-content: center;
+        margin-right: 93px;
+
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-inline-start: 0px;
+    }
+}
+
+
+
+.footer-socials__icon {
+    @include centeredFlex;
+    align-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        
+    }
+    
+    &-svg{
+        fill: $whiteColor;
+        }
+
+    &-subscribe{
+        fill: $whiteColor;
+        margin-left: 10px;        
+    }
+
+
+}
+
+
+
+.address-title {
+    margin-top: 10px;
+    @include  textFont($height: 2, $spacing: 0.03em); 
+    color: $whiteColor;
+}
+
+.address-subtitle {
+    @include  textFont($height: 1.7, $spacing: 0.03em); 
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.button-footer {
+
+    &__sub {
+    @include centeredFlex;
+    @include  textFont($size: 16px, $weight: 900, $height: 1.9, $spacing: 0.06em);
+    color: $whiteColor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    width: 200px;
+    height: 50px;
+    background: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+    &__email {
+    display: flex;
+    margin-top: 21px;
+    
+}
+
+
+    &__label{
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    margin-right: 10px;
+    padding-left: 16px;
+    @include  textFont($size: 16px,  $height: 1.25, $spacing: 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+
+
+}
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

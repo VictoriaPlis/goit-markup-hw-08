@@ -1,0 +1,111 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.page-header {
+    @extend %section;
+    
+}
+
+.main-nav {
+    @include centeredFlex();
+    list-style: none;
+    text-decoration: none;
+}
+
+.site-nav {
+    @include centeredFlex();
+    margin-left: 85px;
+    list-style: none;
+    padding: 0;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+   
+
+    &__item {
+        position: relative;
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 50px;
+}
+    &__link {
+        display: block;
+        padding: 32px 0px;
+        color: $primaryTextColor;
+        @include textFont();
+        
+        &:focus,
+        &:hover {
+            color: $accentColor;
+        }
+        
+    }
+    &__link-current {
+        display: block;
+        padding: 32px 0px;
+        color: $primaryTextColor;
+        @include textFont();
+
+        &:focus,
+        &:hover {
+            color: $accentColor;
+        }
+    }
+
+    &__link-current:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $accentColor;
+        border-radius: 2px;
+        color: $primaryTextColor;
+    }
+}
+
+
+.auth-nav {
+    
+    &__list {
+        @include centeredFlex();
+        list-style: none;
+        padding: 0;
+        margin-left: auto;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        padding-inline-start: 0px;
+
+    }
+
+    &__link {
+        @include centeredFlex();
+        @include textFont;
+        @include transition;
+        color: $secondaryTextColor;
+
+        &:focus,
+        &:hover {
+            color: $accentColor;
+            fill: $accentColor;
+            @include transition();
+        }
+    }
+    
+    
+    &__item:nth-child(odd) {
+        margin-right: 30px;
+    }
+
+    &__icon-svg {
+        margin-right: 10px;
+        padding-top: 2px;
+        fill: currentColor;
+        @include transition();
+
+       
+    }
+}
+

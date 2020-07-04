@@ -1,0 +1,21 @@
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/description";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/page-footer";
+@import "./components/modal";
+
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+@import "./base/normalize";
+
+
+body {
+    @extend %li;
+    @extend %list;
+}

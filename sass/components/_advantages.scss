@@ -1,0 +1,111 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+.visually-hidden {
+    @extend %visually-hidden;
+}
+
+
+
+.adv-nav__icon {
+    @include centeredFlex();
+    width: 270px;
+    height: 120px;
+    background-color: $buttonColor;
+    margin-bottom: 30px;
+   
+    
+
+}
+.icon-antenna {
+    width: 65px;
+    height: 70px;
+    
+}
+
+.icon-clock {
+    width: 67px;
+    height: 70px;
+
+}
+
+.icon-diagram {
+    height: 70px;
+
+}
+
+.icon-astronaut {
+    height: 70px;
+
+}
+
+.advantages-list {
+    @media screen and (min-width: $widthTablet) {
+        display: flex;
+      }
+      @media screen and (min-width: $widthTablet) and (max-width: $widthDesktop - 1) {
+        flex-wrap: wrap;
+      }
+    
+}
+
+.advantages-item {
+    @media screen and (min-width: $widthTablet) {
+        width: calc((100% - 30px) / 2);
+        &:nth-child(2n + 1) {
+          margin-right: 30px;
+        }
+      }
+      @media screen and (min-width: $widthDesktop) {
+        width: calc((100% - 90px) / 4);
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    
+      @media screen and (max-width: $widthTablet - 1) {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+      @media screen and (max-width: $widthDesktop - 1) {
+        &:nth-child(-n + 2) {
+          margin-bottom: 30px;
+        }
+      
+      }
+    
+}
+
+.advantages-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $widthTablet - 1) {
+        text-align: center;}
+}
+
+
+.advantages-text {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: $secondaryTextColor;
+
+}

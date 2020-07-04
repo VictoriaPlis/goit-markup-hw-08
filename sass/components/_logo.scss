@@ -1,0 +1,46 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;    
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 22px;    
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    color: $accentColor;
+
+}
+
+
+
+.logo-studio {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;    
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    color: black;
+}
+
+.logo-studio-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 22px;    
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    color: white;
+}
+a {
+    text-decoration: none;
+}

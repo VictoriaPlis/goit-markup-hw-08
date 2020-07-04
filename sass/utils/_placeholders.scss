@@ -1,0 +1,45 @@
+%notification {
+    background-color: #ccc;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+%list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  %li {
+      list-style: none;
+  }
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+%section {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  %section1200 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  
