@@ -11,22 +11,19 @@
 
 .adv-nav__icon {
     @include centeredFlex();
-    width: 270px;
-    height: 120px;
-    background-color: $buttonColor;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
+    background-color: $buttonColor;
    
-    
+   }
 
-}
 .icon-antenna {
-    width: 65px;
     height: 70px;
     
 }
 
 .icon-clock {
-    width: 67px;
     height: 70px;
 
 }
@@ -42,6 +39,8 @@
 }
 
 .advantages-list {
+  list-style-type: none;
+
     @media screen and (min-width: $widthTablet) {
         display: flex;
       }
@@ -52,6 +51,7 @@
 }
 
 .advantages-item {
+
     @media screen and (min-width: $widthTablet) {
         width: calc((100% - 30px) / 2);
         &:nth-child(2n + 1) {
@@ -74,23 +74,17 @@
         &:nth-child(-n + 2) {
           margin-bottom: 30px;
         }
-      
       }
     
 }
 
-.advantages-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .advantages-title {
     margin-top: 0;
     margin-bottom: 10px;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+
+    @include textFont($weight: bold, $spacing: 0.03em); 
     text-transform: uppercase;
 
     @media screen and (max-width: $widthTablet - 1) {

@@ -469,19 +469,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
+  background-color: #F5F4FA;
 }
 
 .icon-antenna {
-  width: 65px;
   height: 70px;
 }
 
 .icon-clock {
-  width: 67px;
   height: 70px;
 }
 
@@ -491,6 +489,10 @@ body {
 
 .icon-astronaut {
   height: 70px;
+}
+
+.advantages-list {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -538,18 +540,16 @@ body {
   }
 }
 
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .advantages-title {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
